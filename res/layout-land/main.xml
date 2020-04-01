@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+
+              android:id="@+id/main" android:focusableInTouchMode="false">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:id="@+id/header">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="#fffff400" android:id="@+id/rechteckGraph"
+            android:layout_weight="2">
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="2"
+            android:id="@+id/buttons" android:focusableInTouchMode="true">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/verschiebung"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Verschiebung: "
+                    android:id="@+id/verschiebungTxt" android:layout_weight="1"/>
+            <Button style="?android:attr/buttonStyleSmall" android:layout_width="wrap_content"
+                    android:onClick="rechteckButton"
+                    android:layout_height="wrap_content" android:text="V: +" android:id="@+id/verschiebungRechts"/>
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V: -"
+                    android:onClick="rechteckButton"
+                    android:id="@+id/verschiebungLinks"
+                    />
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/amplitude">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Amplitude: "
+                    android:id="@+id/amplitudeTxt" android:layout_weight="1"/>
+            <Button style="?android:attr/buttonStyleSmall" android:layout_width="wrap_content"
+                    android:onClick="rechteckButton"
+                    android:layout_height="wrap_content" android:text="A: -" android:id="@+id/amplitudeKleiner"/>
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A: +"
+                    android:id="@+id/amplitudeGroesser"
+                    android:onClick="rechteckButton"
+                    />
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/breite">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Breite:"
+                    android:id="@+id/breiteTxt" android:layout_weight="1"/>
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B+"
+                    android:id="@+id/breiteGroesser"/>
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B-"
+                    android:id="@+id/breiteKleiner"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/transformierte" android:layout_weight="2">
+    </LinearLayout>
+</LinearLayout>
+
